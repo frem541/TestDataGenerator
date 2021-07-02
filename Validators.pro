@@ -11,14 +11,14 @@ CONFIG += c++11
 
 SOURCES += \
     carvalidator.cpp \
-    harmonicvalidator.cpp \
+    harmonicmotionvalidator.cpp \
     planevalidator.cpp \
     validator.cpp
 
 HEADERS += \
     Validators_global.h \
     carvalidator.h \
-    harmonicvalidator.h \
+    harmonicmotionvalidator.h \
     planevalidator.h \
     validator.h
 

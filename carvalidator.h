@@ -6,19 +6,19 @@
 class CarValidator : public Validator
 {
 private:
-    const double _maxFuelLevel = 50;
-    const double _minFuelLevel = 1;
-    const double _maxSpeed = 200;
-    const double _minSpeed = 0;
-    const double _maxEngineTemperature = 115;
-    const double _minEngineTemperature = -25;
-    const double _maxEngineRPM = -1;
-    const double _minEngineRPM = -1;
+    static constexpr double _MAX_FUEL_LEVEL  = 50;
+    static constexpr double _MIN_FUEL_LEVEL = 1;
+    static constexpr double _MAX_SPEED = 200;
+    static constexpr double _MIN_SPEED = 0;
+    static constexpr double _MAX_ENGINE_TEMPERATURE = 115;
+    static constexpr double _MIN_ENGINE_TEMPERATURE = -25;
+    static constexpr double _MAX_ENGINE_RPM = -1;
+    static constexpr double _MIN_ENGINE_RPM = -1;
 public:
-    bool validateFuelLevel(double fuelLevel);
-    bool validateSpeed(double speed);
-    bool validateEngineTemperature(double engineTemperature);
-    bool validateEngineRPM(double engineRPM);
+    static bool validateFuelLevel(double fuelLevel);
+    static bool validateSpeed(double speed);
+    static bool validateEngineTemperature(double engineTemperature);
+    static bool validateEngineRPM(double engineRPM);
 };
 
 #endif // CARVALIDATOR_H
