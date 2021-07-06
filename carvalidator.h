@@ -12,8 +12,8 @@ private:
     static constexpr double _MIN_SPEED = 0;
     static constexpr double _MAX_ENGINE_TEMPERATURE = 115;
     static constexpr double _MIN_ENGINE_TEMPERATURE = -25;
-    static constexpr double _MAX_ENGINE_RPM = -1;
-    static constexpr double _MIN_ENGINE_RPM = -1;
+    static constexpr double _MAX_ENGINE_RPM = 650;
+    static constexpr double _MIN_ENGINE_RPM = 6500;
 public:
     static bool validateFuelLevel(double fuelLevel);
     static bool validateSpeed(double speed);
