@@ -7,5 +7,5 @@ bool Validator::compare(double min, double max)
 
 bool Validator::validateTime(double duration, double deltaTime)
 {
-    return duration <= deltaTime;
+    return duration >= deltaTime;
 }
