@@ -1,7 +1,7 @@
 #ifndef VALIDATOR_H
 #define VALIDATOR_H
 
-#include "Validators_global.h"
+#include "validators_global.h"
 
 class VALIDATORS_EXPORT Validator
 {

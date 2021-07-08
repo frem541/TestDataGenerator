@@ -1,9 +1,15 @@
 #ifndef CARVALIDATOR_H
 #define CARVALIDATOR_H
 
+#if defined(VALIDATORS_LIBRARY)
+#  define CAR_VALIDATORS_EXPORT Q_DECL_EXPORT
+#else
+  #define CAR_VALIDATORS_EXPORT Q_DECL_IMPORT
+#endif
+
 #include "validator.h"
 
-class CarValidator : public Validator
+class CAR_VALIDATORS_EXPORT CarValidator : public Validator
 {
 private:
     static constexpr double _MAX_FUEL_LEVEL  = 50;
@@ -12,8 +18,8 @@ private:
     static constexpr double _MIN_SPEED = 0;
     static constexpr double _MAX_ENGINE_TEMPERATURE = 115;
     static constexpr double _MIN_ENGINE_TEMPERATURE = -25;
-    static constexpr double _MAX_ENGINE_RPM = 650;
-    static constexpr double _MIN_ENGINE_RPM = 6500;
+    static constexpr double _MAX_ENGINE_RPM = 8000;
+    static constexpr double _MIN_ENGINE_RPM = 500;
 public:
     static bool validateFuelLevel(double fuelLevel);
     static bool validateSpeed(double speed);

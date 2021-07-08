@@ -2,10 +2,10 @@
 
 bool HarmonicMotionValidator::validateCyclicFrequency(double cyclicFrequency)
 {
-    return cyclicFrequency > 0;
+    return true;//cyclicFrequency > 0;
 }
 
 bool HarmonicMotionValidator::validateAmplitude(double amplitude)
 {
-    return amplitude > 0;
+    return true;//amplitude > 0;
 }
